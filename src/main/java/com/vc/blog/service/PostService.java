@@ -20,9 +20,11 @@ public interface PostService {
 	
 	void deletePost(Long id);
 	
-	PostResponse getAllPostsByCategory(Long categoryId, Integer pageNumber, Integer pageSize);
+	List<PostDto> getAllPostsByCategory(Long categoryId);
 //	
-	PostResponse getAllPostsByUser(Long userId, Integer pageNumber, Integer pageSize);
+	List<PostDto> getAllPostsByUser(Long userId);
 	
 	List<PostDto> searchPosts(String keywords);
+	
+	
 }

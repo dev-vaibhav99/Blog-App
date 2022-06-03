@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 import com.vc.blog.entity.Categories;
 import com.vc.blog.entity.Posts;
 import com.vc.blog.entity.Users;
-import com.vc.blog.payloads.PostResponse;
 
 @Repository
 public interface PostRepo extends JpaRepository<Posts, Long>{

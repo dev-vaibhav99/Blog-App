@@ -11,15 +11,15 @@ public class ResourceNotFoundException extends RuntimeException {
 	String fieldName;
 	Long fieldValue;
 
-	public ResourceNotFoundException() {
-		// TODO Auto-generated constructor stub
-	}
-
 	public ResourceNotFoundException(String resourceName, String fieldName, Long fieldValue) {
 		super(String.format("%s NOT FOUND WITH %s : %s", resourceName, fieldName, fieldValue));
 		this.resourceName = resourceName;
 		this.fieldName = fieldName;
 		this.fieldValue = fieldValue;
+	}
+
+	public ResourceNotFoundException() {
+		// TODO Auto-generated constructor stub
 	}
 
 }

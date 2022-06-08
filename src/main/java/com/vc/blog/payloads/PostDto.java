@@ -5,10 +5,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 public class PostDto {
@@ -21,5 +23,5 @@ public class PostDto {
 	private CategoryDto category;
 	private UserDto user;
 	
-	private Set<CommentDto> comments = new HashSet<CommentDto>();
+	private Set<CommentDto> comments = new HashSet<>();
 }
